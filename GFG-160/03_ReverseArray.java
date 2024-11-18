@@ -1,8 +1,5 @@
-package Striver.Array;
 
-import java.util.Arrays;
-
-public class ReverseArray {
+class ReverseArray {
     static void NativeRev(int[] arr){
         int n = arr.length;
         int[] temp = new int[n];

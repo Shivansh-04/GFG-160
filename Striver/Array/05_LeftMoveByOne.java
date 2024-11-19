@@ -1,0 +1,20 @@
+package Striver.Array;
+
+class LeftMoveByOne {
+    static int[] retateLeft(int[] arr){
+        int temp = arr[0];
+        int n = arr.length;
+        for (int i = 1; i < arr.length; i++) {
+            arr[i-1] = arr[i];
+        }
+        arr[n-1]=temp;
+        return arr;
+    }
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4,5};
+        retateLeft(arr);
+        for (int i : arr) {
+            System.out.print(i+" ");
+        }
+    }
+}
